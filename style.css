@@ -1,0 +1,117 @@
+body {
+  background-image: url('background.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: #b00020;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: rgba(255,255,255,0.9);
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+
+form input, form button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: #b00020;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #8a0018;
+}
+
+footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 1.5rem;
+}
+
+.hero {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 24px;
+  background: #c0392b;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-buttons .btn:hover {
+  background: #a93226;
+}
+
+.hero-buttons .btn-alt {
+  background: #27ae60;
+}
+
+.hero-buttons .btn-alt:hover {
+  background: #1e8449;
+}

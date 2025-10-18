@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donors - Donor Connect</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Donor Connect</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="donors.html">Donors</a>
+      <a href="request.html">Request</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Register as a Donor</h2>
+
+    <form id="donorForm">
+      <input type="hidden" name="type" value="Donor">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="bloodgroup" placeholder="Blood Group" required>
+      <input type="text" name="city" placeholder="City" required>
+      <input type="text" name="phone" placeholder="Phone" required>
+      <button type="submit">Submit Donor</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Donor Connect | Hackathon Project</p>
+  </footer>
+</body>
+</html>
