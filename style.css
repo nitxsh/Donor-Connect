@@ -60,6 +60,27 @@ form button:hover {
   background: #8a0018;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex: 1; /* makes section take remaining space */
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 0;   /* remove extra margin if any */
+}
+
 footer {
   text-align: center;
   background-color: #000;
