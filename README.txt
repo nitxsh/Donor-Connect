@@ -1,1 +1,1 @@
-Replace background.jpg with your chosen image. Deploy Apps Script and set scriptURL in script.js if you change it.
+Just a hackathon project trying to collect blood data
