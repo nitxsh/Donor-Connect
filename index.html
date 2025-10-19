@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Donor Connect</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Google Sign-In Script -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
+
 <body>
   <header>
     <h1>Donor Connect</h1>
@@ -21,6 +25,15 @@
     <div class="hero-content">
       <h1>Welcome to Donor Connect</h1>
       <p>Connecting blood donors and patients instantly.<br>Save lives faster, easier — together.</p>
+
+      <!-- ✅ Google Sign-In Button goes here -->
+      <div id="g_id_onload"
+           data-client_id="http://754818166227-34v85onmkqbma1tdfj9sc94fmhhjm61h.apps.googleusercontent.com"
+           data-callback="handleCredentialResponse">
+      </div>
+      <div class="g_id_signin" data-type="standard"></div>
+      <!-- ✅ End of Google Sign-In -->
+
       <div class="hero-buttons">
         <a href="donors.html" class="btn">Find Donors</a>
         <a href="request.html" class="btn btn-alt">Request Blood</a>
@@ -31,5 +44,23 @@
   <footer>
     <p>© 2025 Donor Connect | Hackathon Project</p>
   </footer>
+
+  <!-- ✅ Handle login response -->
+  <script>
+    function handleCredentialResponse(response) {
+      const data = parseJwt(response.credential);
+      alert("Welcome, " + data.name + "!");
+      console.log("User Info:", data);
+    }
+
+    function parseJwt(token) {
+      const base64Url = token.split('.')[1];
+      const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+      const jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+      return JSON.parse(jsonPayload);
+    }
+  </script>
 </body>
 </html>
