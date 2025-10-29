@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbwzS4bi1KbOHQgQOblmVHBIioNYFIFb1lvJDnZRkswwdqqJ3A8tVdsukxwXL2hy1sASyQ/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzmEXDONd7RG4usH-Xwtw72Nahbt5tw8Kw5ZxON7MwKYhG3W00WSI6bTvBXVqdhizzkuw/exec";
 
 // Function to handle any form by ID
 function handleForm(formId) {
