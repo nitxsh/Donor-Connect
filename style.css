@@ -7,6 +7,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+
+
 header {
   background: #b00020;
   color: white;
@@ -135,4 +139,9 @@ footer {
 
 .hero-buttons .btn-alt:hover {
   background: #1e8449;
+}
+button:hover {
+  box-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff0000;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
